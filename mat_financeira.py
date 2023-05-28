@@ -20,7 +20,7 @@ print('formulação básica:.')
 
 print('='*120)
 print('M = C + J')
-print('J=C x i')
+print('J = C x i')
 print('i = J/C')
 print('')
 print('Exemplo: um capital de 1000 aplicado a uma taxa de 12% ao mês. qual é o montante ao final do mês\n')
@@ -30,7 +30,7 @@ print('='*120)
 print('.Agora vamos aplicar esse conhecimento.')
 print('Nessa primeira lição vamos estabeler o tempo n = 1 unidade \n')
 lembrete=(input('Lembre-se faça o exercício sozinho depois volte aqui e confira o resultado!. Tecle enter para continuar'))
-print('qual variável vc quer descobrir?')
+print('Qual variável vc quer descobrir?')
 while True:
     variável=(input('Digite M para montante; C para capital; J para juros; i para taxa de juros ou X para sair e mostrar o resultado: '))
     if variável=='X' or variável=='x':
@@ -56,6 +56,8 @@ while True:
     else:
         print('Variável inválida. Favor digitar novamente!')
         variável=(input('Digite M para montante; C para capital; J para juros; i para taxa de juros ou X para sair e mostrar o resultado: '))
+passo_a_passo=(input('Ver apenas o resultado tecle enter ou P para ver o passo a passo do exercício: '))
+
 print('='*120)
 print('Montante = ',montante)
 print('Capital inicial = ',capital_inicial)
