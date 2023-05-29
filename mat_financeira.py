@@ -41,6 +41,8 @@ while True:
         capital_inicial=float(input('Qual é o valor do Capital inicial: '))
         juros=float(input('Qual é o valor dos Juros: '))
         i=float(input('Qual é o valor da taxa de juros: '))
+        if i==0:
+            i=juros/capital_inicial
         montante=capital_inicial+juros
         lista.append(variável)
         
@@ -48,6 +50,10 @@ while True:
         montante=float(input('Qual o valor do montante: '))
         juros=float(input('Qual o valor dos juros: '))
         i=float(input('Qual é o valor da taxa de juros: '))
+        if i==0:
+            i=juros/capital_inicial
+        montante=capital_inicial+juros
+        lista.append(variável)
         capital_inicial=montante-juros
         lista.append(variável)
 
@@ -55,14 +61,18 @@ while True:
         capital_inicial=float(input('Qual o valor do capital inicial: '))
         i=float(input('Qual é o valor da taxa de juros: '))
         montante=float(input('Qual é o valor do montante: '))
+        if montante==0:
+            montante=capital_inicial+(capital_inicial*i)
         juros=capital_inicial*i
         lista.append(variável)
 
     elif variável=='i' or variável=='I':
-        montante=float(input('Qual o valor do montante:  '))
         capital_inicial=float(input('Qual o valor do capital inicial: '))
         juros=float(input('Qual o valor dos juros: '))
         i=juros/capital_inicial
+        montante=float(input('Qual o valor do montante:  '))
+        if montante==0:
+            montante=capital_inicial+juros
         lista.append(variável)
 
     else:
