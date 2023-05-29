@@ -21,7 +21,7 @@ print('formulação básica:.')
 print('='*120)
 print('M = C + J')
 print('J = C x i')
-print('i = J/C')
+print('i = J / C')
 print('')
 print('Exemplo: um capital de 1000 aplicado a uma taxa de 12% ao mês. qual é o montante ao final do mês\n')
 print('J = C x i : J = 1000 x 0,12 = 120')
@@ -84,7 +84,7 @@ if 'j' in lista or 'J' in lista:
     print('='*120)
 if 'i' in lista or 'I' in lista:
     print('Taxa de juros = J / C')
-    print('Taxa de juros = {} / {} = {} ou {}'.format(juros,capital_inicial,i,i*100))
+    print('Taxa de juros = {} / {} = {} ou {}%'.format(juros,capital_inicial,i,i*100))
 print('='*120)
 print('RESULTADO')
 print('')
@@ -95,3 +95,4 @@ print('Taxa de juros = ',i,' ou ',i*100,'%')
 
 print('='*120)
 os.system('pause')
+
