@@ -77,6 +77,7 @@ while True:
 
     else:
         print('Variável inválida. Favor digitar novamente!')
+
         variável=(input('Digite M para montante; C para capital; J para juros; i para taxa de juros ou X para sair e mostrar o resultado: '))
 passo_a_passo=(input('Ver apenas o resultado tecle enter ou P para ver o passo a passo do exercício: '))
 print('='*120)
