@@ -26,10 +26,11 @@ print('     B = 30000 x 2/3 = 20000')
 print('     C = 36000 x 2/3 = 24000')
 print('                       =====')
 print('         Lucro Total = 60000')
+print('')
 
 print('.Agora vamos aplicar esse conhecimento.')
 
 socios=int(input('Quantos sócios possuem a sociedade:  '))
 
 for i in range(socios):
-    entradas=float(input('Digite quanto o {}º '))
+    entradas=float(input('Digite o capital o {}º sócio entrou:   '.format(i+1)))
