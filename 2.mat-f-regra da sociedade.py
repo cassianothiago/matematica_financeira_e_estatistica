@@ -37,10 +37,10 @@ cont=0
 
 for i in range(socios):
     entradas=float(input('Digite o capital o {}º sócio entrou:   '.format(i+1)))
-    cont=cont+1
-    for y in range(cont):
-        soma=soma+entradas
+    soma=soma+entradas
+    for y in range(i+1):
         lucro_parcial=lucro/soma
+        print(lucro_parcial)
         a=lucro_parcial*entradas
         print(a)
 
