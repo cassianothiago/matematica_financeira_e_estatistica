@@ -29,25 +29,19 @@ print('         Lucro Total = 60000')
 print('')
 
 print('.Agora vamos aplicar esse conhecimento.')
-
+lista=[]
 socios=int(input('Quantos sócios possuem a sociedade:  '))
 lucro=float(input('Qual foi o lucro total recebido: '))
 soma=0
 cont=0
-
+print('='*120)
 for i in range(socios):
-    entradas=float(input('Digite o capital o {}º sócio entrou:   '.format(i+1)))
+    entradas=float(input('Digite o capital do {}º sócio entrou:   '.format(i+1)))
     soma=soma+entradas
-    for y in range(i+1):
-        lucro_parcial=lucro/soma
-        print(lucro_parcial)
-        a=lucro_parcial*entradas
-        print(a)
-
-    
-
-
-
-
-
-
+    lista.append(entradas)
+print('='*120)
+for y in range(socios):
+    lucro_parcial=lucro/soma
+    distribuição=lucro_parcial*lista[y]
+    print('O {}º sócio recebeu = {}'.format(y+1,distribuição))
+print('='*120)  
