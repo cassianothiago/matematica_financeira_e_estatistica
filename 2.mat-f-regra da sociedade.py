@@ -31,6 +31,20 @@ print('')
 print('.Agora vamos aplicar esse conhecimento.')
 
 socios=int(input('Quantos sócios possuem a sociedade:  '))
+lucro=float(input('Qual foi o lucro total recebido: '))
+soma=0
 
 for i in range(socios):
     entradas=float(input('Digite o capital o {}º sócio entrou:   '.format(i+1)))
+    soma=soma+entradas
+    lucro_parcial=lucro/soma
+    a=lucro_parcial*entradas
+    print(a)
+
+    
+
+
+
+
+
+
