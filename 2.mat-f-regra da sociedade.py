@@ -43,6 +43,6 @@ print('='*120)
 for y in range(socios):
     lucro_parcial=lucro/soma
     distribuição=lucro_parcial*lista[y]
-    print('O {}º sócio recebeu = {}'.format(y+1,distribuição))
+    print('O {}º sócio recebeu = {:.2f}'.format(y+1,distribuição))
 print('='*120)  
 os.system('pause')
