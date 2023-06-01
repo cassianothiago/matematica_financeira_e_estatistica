@@ -33,7 +33,6 @@ lista=[]
 socios=int(input('Quantos sócios possuem a sociedade:  '))
 lucro=float(input('Qual foi o lucro total recebido: '))
 soma=0
-cont=0
 print('='*120)
 for i in range(socios):
     entradas=float(input('Digite o capital do {}º sócio entrou:   '.format(i+1)))
